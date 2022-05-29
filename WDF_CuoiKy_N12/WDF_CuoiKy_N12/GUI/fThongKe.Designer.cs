@@ -34,7 +34,7 @@ namespace WDF_CuoiKy_N12.GUI
             this.button3 = new System.Windows.Forms.Button();
             this.tuychon = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.luoi)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -43,7 +43,7 @@ namespace WDF_CuoiKy_N12.GUI
             // luoi
             // 
             this.luoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.luoi.Location = new System.Drawing.Point(29, 142);
+            this.luoi.Location = new System.Drawing.Point(15, 173);
             this.luoi.Name = "luoi";
             this.luoi.Size = new System.Drawing.Size(605, 265);
             this.luoi.TabIndex = 39;
@@ -53,7 +53,7 @@ namespace WDF_CuoiKy_N12.GUI
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.tuychon);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnThongKe);
             this.groupBox1.Location = new System.Drawing.Point(15, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(646, 65);
@@ -91,14 +91,14 @@ namespace WDF_CuoiKy_N12.GUI
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnThongKe
             // 
-            this.button2.Location = new System.Drawing.Point(375, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "Thống kê";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnThongKe.Location = new System.Drawing.Point(375, 15);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(75, 26);
+            this.btnThongKe.TabIndex = 38;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -110,7 +110,7 @@ namespace WDF_CuoiKy_N12.GUI
             this.label1.TabIndex = 37;
             this.label1.Text = "BÁO CÁO THỐNG KÊ SÁCH TRONG THƯ VIỆN";
             // 
-            // FThongKe
+            // fThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@ namespace WDF_CuoiKy_N12.GUI
             this.Controls.Add(this.luoi);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "FThongKe";
+            this.Name = "fThongKe";
             this.Text = "Thống Kê";
             ((System.ComponentModel.ISupportInitialize)(this.luoi)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -134,7 +134,7 @@ namespace WDF_CuoiKy_N12.GUI
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox tuychon;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Label label1;
     }
 }
