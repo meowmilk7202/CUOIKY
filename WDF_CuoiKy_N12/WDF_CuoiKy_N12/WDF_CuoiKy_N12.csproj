@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38AE0053-3070-444F-8E8F-A35F2D439186}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WDF_CuoiKy_N12</RootNamespace>
+    <AssemblyName>WDF_CuoiKy_N12</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fPhieuMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fPhieuMuonTra.Designer.cs">
+      <DependentUpon>fPhieuMuonTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fThongKe.Designer.cs">
+      <DependentUpon>fThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fThongKeDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fThongKeDocGia.Designer.cs">
+      <DependentUpon>fThongKeDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fThongTinDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fThongTinDangNhap.Designer.cs">
+      <DependentUpon>fThongTinDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTimDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTimDocGia.Designer.cs">
+      <DependentUpon>fTimDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTimSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTimSach.Designer.cs">
+      <DependentUpon>fTimSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fUpdateDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fUpdateDocGia.Designer.cs">
+      <DependentUpon>fUpdateDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fUpdateNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fUpdateNhanVien.Designer.cs">
+      <DependentUpon>fUpdateNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fUpdateSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fUpdateSach.Designer.cs">
+      <DependentUpon>fUpdateSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fUpdateTheLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fUpdateTheLoaiSach.Designer.cs">
+      <DependentUpon>fUpdateTheLoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fPhieuMuonTra.resx">
+      <DependentUpon>fPhieuMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fThongKe.resx">
+      <DependentUpon>fThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fThongKeDocGia.resx">
+      <DependentUpon>fThongKeDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTimDocGia.resx">
+      <DependentUpon>fTimDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTimSach.resx">
+      <DependentUpon>fTimSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fUpdateDocGia.resx">
+      <DependentUpon>fUpdateDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fUpdateNhanVien.resx">
+      <DependentUpon>fUpdateNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fUpdateSach.resx">
+      <DependentUpon>fUpdateSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fUpdateTheLoaiSach.resx">
+      <DependentUpon>fUpdateTheLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13116theme-dep-doc-dao-nghe-thuat-danh-cho-may-tinh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131119hinh-nen-nhung-giot-nuoc-tinh-khiet-danh-cho-website.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2588798.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHeader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light 010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
