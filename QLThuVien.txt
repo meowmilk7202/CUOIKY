@@ -1,0 +1,95 @@
+-- Tạo csdl quản lý thu viện
+CREATE DATABASE QLThuVien
+go
+-- Tạo CSDL QLTHUVIEN
+USE QLThuVien
+GO
+--Tạo bảng NhanVien
+-- 
+CREATE TABLE dbo.NhanVien(
+	MaNv char(8) primary key,
+	TenNv char(30) ,
+	GioiTinh char (3),
+	SDT int,
+	Ngayvaolam  date ,
+	DiaChi char(30)
+)
+GO
+-- Tao Bang TaiKhoan
+CREATE TABLE dbo.TaiKhoan(
+	Uesername  char(8)  references NhanVien(MaNv),
+	MatKhau char (15) ,
+	Quyenhan char(15),
+	primary key(Uesername,MatKhau)
+	
+)
+Go
+
+--Tao bang ca lam viec
+create Table dbo.CaLamViec(
+	Maca char(8) primary key,
+	ThoiGianbatdau time ,
+	ThoiGianKetThuc time
+)
+Go
+-- Tao bang lich lam viec
+
+create Table dbo.LicLamViec(
+	MaNv char(8) references NhanVien(MaNv),
+	CaViec char (8)references CaLamViec(Maca),
+	NgayLamViec date
+
+	primary key(MaNv,CaViec,NgayLamViec)
+
+)
+Go
+
+create table dbo.DocGia(
+	MaDocGia char(8) primary key,
+	TenDocGia char (30) ,
+	SDT int,
+	NgaySinh date,
+	DiaChi char(30)
+)
+Go
+
+create table dbo.LoaiSach(
+	MaLoaiSach nvarchar(50) primary key,
+	TenLoaiSach nvarchar(50)
+)
+go
+---Tao bang sach
+create table dbo.Sach(
+	MaSach char(8) primary key,
+	Tensach char(30),
+	TheLoai nvarchar(50) references LoaiSach(MaLoaiSach),
+	SoLuong int,
+	ViTri char(30)
+	)
+Go
+
+--- Tao bang thue sach
+create table dbo.MuonSach(
+	MaDocGia char(8) references DocGia(MaDocGia),
+	MaNv char(8) references NhanVien(MaNv),
+	MaSach char(8) references Sach(MaSach),
+	Soluong int ,
+	NgayMuon date,
+	NgayHenTra date,
+	primary key(MaDocGia,MaNv,MaSach,NgayMuon)
+)
+
+Go
+
+--Tao bang tra sach
+create table dbo.Trasach(
+	MaDocGia char(8) references DocGia(MaDocGia),
+	MaNv char(8) references NhanVien(MaNv),
+	MaSach char(8) references Sach(MaSach),
+	Soluong int ,
+	NgayMuon date,
+	NgayTra date,
+	primary key(MaDocGia,MaNv,MaSach,NgayTra)
+)
+
+go
