@@ -58,11 +58,23 @@
     <Compile Include="GUI\fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\fNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fNXB.Designer.cs">
+      <DependentUpon>fNXB.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fPhieuMuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\fPhieuMuonTra.Designer.cs">
       <DependentUpon>fPhieuMuonTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTacGia.Designer.cs">
+      <DependentUpon>fTacGia.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fThongKe.cs">
       <SubType>Form</SubType>
@@ -126,14 +138,23 @@
     <EmbeddedResource Include="GUI\fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fNXB.resx">
+      <DependentUpon>fNXB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fPhieuMuonTra.resx">
       <DependentUpon>fPhieuMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTacGia.resx">
+      <DependentUpon>fTacGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fThongKe.resx">
       <DependentUpon>fThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fThongKeDocGia.resx">
       <DependentUpon>fThongKeDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fThongTinDangNhap.resx">
+      <DependentUpon>fThongTinDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fTimDocGia.resx">
       <DependentUpon>fTimDocGia.cs</DependentUpon>
