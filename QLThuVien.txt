@@ -51,11 +51,25 @@ create table dbo.DocGia(
 	NgaySinh date,
 	DiaChi char(30)
 )
-Go
 
+go
+create table dbo.NXB(
+	MaNXB nvarchar(50) primary key,
+	TenNXB nvarchar(50),
+	DiaChi nvarchar(100),
+	SoDT nvarchar(15)
+)
+go
 create table dbo.LoaiSach(
 	MaLoaiSach nvarchar(50) primary key,
-	TenLoaiSach nvarchar(50)
+	TenLoaiSach nvarchar(50),
+	MaNXB nvarchar(50) references NXB(MaNXB)
+)
+Go
+create table dbo.TacGia(
+	MaLoaiSach nvarchar(50) references LoaiSach(MaLoaiSach),
+	TenTacGia nvarchar(50),
+	primary key(MaLoaiSach,TenTacGia)
 )
 go
 ---Tao bang sach
